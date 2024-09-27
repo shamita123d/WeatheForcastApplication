@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CurrentWeather</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="layer">
+    <div id="Nav">
+          <div id="nav1">
+            <img
+              src="https://img.freepik.com/free-psd/3d-icon-weather-conditions-with-rain-sun_23-2150108737.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1727136000&semt=ais_hybrid"
+              alt="navlogo"
+            />
+            <p>Weather-App</p>
+          </div>
+          </div>
+        <div class="container">
+            <div class="img_section">
+              <div class="default_info">
+                <h2 class="default_day">Sunday</h2>
+                <span class="default_date">18 September 2023</span>
+              </div>
+            </div>
+          </div> 
+        <div id="layer1">
+          
+            <div id="center">
+                <div class="input-section">
+                <input type="text" id="cityInput" placeholder="Enter city name" class="input-field" />
+                <button class="btn" id="btnSearch">Get Weather</button>
+                </div>
+                <div class="weather-info">
+                <h2 id="cityName">City Name</h2>
+                <p id="temperature">Temperature: --°C</p>
+                <p id="description">Description: --</p>
+                <p id="humidity">Humidity: --%</p>
+                <p id="wind">Wind Speed: -- km/h</p>
+                <div  class="fbtn"">
+                    <button class="btn" id="btnDay">Day</button>
+                    <button class="btn" id="btnHours">Hours</button>
+                </div>
+            </div>
+            
+            </div>
+        </div> 
+        <div class="hidden" id="forecast-info"></div>   
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
